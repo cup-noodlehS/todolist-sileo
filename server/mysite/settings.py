@@ -13,8 +13,6 @@ SECRET_KEY = 'django-insecure-9e1-9v7tt7ta1)j88ue%6nm3a5r15v0mm0#9g0+tf+ys%=9-u+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -79,8 +77,10 @@ CORS_ALLOWED_ORIGINS = [
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'todoapp',
+        'USER': 'sheldon',
+        'PASSWORD': '123',
     }
 }
 
